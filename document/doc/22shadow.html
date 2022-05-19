@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+    <style>
+        div{
+            width: 200px;
+            height: 80px;
+            border:3px solid thistle;
+            text-align: center;
+            /* box-shadow:0 0 50px 5px yellow;
+            text-shadow: 0 0 5px red;
+            background: linear-gradient(to right, blue, pink, red);
+             */
+
+            
+            -webkit-box-shadow: 50px 40px 100px 50px rgba(0,0,0,0.9);
+            box-shadow: 50px 40px 100px 50px rgba(0,0,0,0.9);
+            text-shadow: 50px 40px 50px #878787;
+
+            background: rgb(252, 236, 252);/* old browsers */
+            background:-moz-linear-gradient(45deg,rgba(252,236,252,1) 0%, rgba(251,166,225,1) 50%, rgba(253,137,215,1) 51%,rgba(255,124,216,1) 100%);/* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg,rgba(252,236,252,1) 0%, rgba(251,166,225,1) 50%, rgba(253,137,215,1) 51%,rgba(255,124,216,1) 100%);/* Chrome10-25,safari5,1-6 */
+            background:linear-gradient(45deg,rgba(252,236,252,1) 0%, rgba(251,166,225,1) 50%, rgba(253,137,215,1) 51%,rgba(255,124,216,1) 100%);/* W3C, IE10+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcefc', endColorstr='#ff7cd8', GradientType=1);/* IE6-9 fallback on horizontal gradient */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>그림자속성</h3>
+    </div>
+    <!-- 
+        box-shadow: x위치값, y위치값, blur, spread, color;
+        text-shadow: x위치값, y위치값, blur, spread, color;
+        -spread 생략  가능-
+
+        -webkit-, -moz-, -ms ...
+        벤더프리픽스 : 공급업체 접두사
+        주요 웹 브라우저 공급자가 새로운 실험적인 기능을 제고할 때 이전 버전의 웹 브라우저에게 그 사실을 알려주기 위해 사용함.
+        css사용 권고 안에 포함되지 못한 기능이나 css사용 권고 안에는 포함되어 있지만 완벽하게 제정된 상태가 아닌 기능을 사용할 때 벤더프리픽스를 사용함.
+
+        https://css3generator.com/
+     -->
+    
+</body>
+</html>

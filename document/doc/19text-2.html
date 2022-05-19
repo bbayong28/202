@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nanum+Gothic&display=swap');
+    
+
+      /*  주소가져왔는데 //되어있으면 앞에 http써줘야함 */
+
+        body{
+            font-family: 'Dongle', sans-serif;
+        }
+        .f1{font-size:48px;}
+        .f2{font-size:3em;}
+        /*  기본 글자 크기 16px - 1em*/
+        .f3{
+            font-size: 300%;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        /* 
+        font-size: 폰트 크기를 지정
+        크기  단위
+        px 웹에서 기본적으로 사용하는 단위
+        em 배수단위 16px = 1em
+        % 백분율 단위
+        --------> 가변단위 vm, vh, rem.....
+         */
+        .f4{
+            font-size: 3em;
+            font-style:italic;
+        }
+        .f5{
+            font-size: 3em;
+            font-weight: bold;
+        }
+        address{
+            font-size: 3em;
+            font-style: normal;
+        }
+        .btn{
+            width:200px;
+            height: 55px;
+            background-color: indianred;
+            text-align:center;
+            /* 블록요소에서만 적용이 됨, 블록요소 안에있는 인라인요소를 정렬하는 속성 */
+            line-height: 55px;
+            border-radius: 30px;
+            border:3px outset #ccc;
+            
+            }
+            .btn:hover{border:3px inset #ccc; /* text-decoration: underline; */}
+            .btn a{
+                display: block;
+                width:100%; height: 100%;
+                font-size: 24px;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                letter-spacing: 2px;  /* 자간 : 글자와 글자사이의 간격 */
+            }
+            .btn:hover a{
+                text-decoration: underline;
+            }
+            .dummy{
+                font-family: 'KyoboHandwriting2020A';
+                font-size: 12px;
+                line-height: 2.5em;  /* =30px */
+            }
+    </style>
+</head>
+<body>
+    <p class="f1">폰트 사이즈 지정하기</p>
+    <p class="f2">폰트 사이즈 지정하기</p>
+    <p class="f3">폰트 사이즈 지정하기</p>
+    <p class="f4">폰트 스타일 지정하기</p>
+    <p class="f5">폰트 굵기 지정하기</p>
+    <address>폰트 스타일 지정하기</address>
+    <div class="btn"><a href="#">click</a></div>
+    <p class="dummy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus doloremque aperiam aliquam unde expedita error esse, cumque ipsam ipsa corporis ex? Aut fuga incidunt esse possimus perferendis illum aliquam quis.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus doloremque aperiam aliquam unde expedita error esse, cumque ipsam ipsa corporis ex? Aut fuga incidunt esse possimus perferendis illum aliquam quis.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus doloremque aperiam aliquam unde expedita error esse, cumque ipsam ipsa corporis ex? Aut fuga incidunt esse possimus perferendis illum aliquam quis.</p>
+</body>
+</html>

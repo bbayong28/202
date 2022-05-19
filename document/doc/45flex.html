@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .content{
+            width:90%;
+            height:500px;
+            border:2px solid #000;
+            margin:0 auto;
+            text-align:center;
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:space-between;
+            align-items:flex-start;
+            /* 교차축 방향으로 플렉스 아이템 배치하기
+            stretch - 기본값, 높이값이 없으면 박스를 부모태그 높이값만큼 확장해서 배치
+            flex-start - 교차축의 시작점에서부터 배치
+            flex-end - 교차축의 끝점에서부터 배치
+            center - 중앙
+            baseline - 교차축 시작점에서 배치되는 자식박스의 글자라인에 맞춰서 배치 */
+        }
+        .content>div{width:30%;}
+        .item1{background-color:palevioletred;}
+        .item2{background-color:palegoldenrod; padding-top:20px;}
+        .item3{
+            background-color:paleturquoise;
+            align-self:center;
+            /* 교차축 방향으로 플렉스 아이템을 개별적으로 배치
+            auto - 부모태그의 align-items 속성을 상속받음. 부모태그에 적용된 속성값이 없는 경우 stretch 적용 */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="item1">플렉스아이템1</div>
+        <div class="item2">플렉스아이템2</div>
+        <div class="item3">플렉스아이템3</div>
+    </div>
+</body>
+</html>

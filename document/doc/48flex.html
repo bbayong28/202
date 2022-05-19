@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        #wrap{
+            width:90%;
+            margin:0 auto;
+            text-align:center;
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+        }
+        #header{
+            width:100%;
+            height:80px;
+            background-color:palevioletred;
+        }
+        #slider{
+            width:50%;
+            height:440px;
+            background-color:palegoldenrod;
+        }
+        #gallery{
+            width:25%;
+            background-color:palegreen;
+        }
+        #rankup{
+            width:25%;
+            background-color:paleturquoise;
+        }
+        #latest{
+            width:25%;
+            height:270px;
+            background-color:lavender;
+        }
+        #popular{
+            width:25%;
+            background-color:khaki;
+        }
+        #banner{
+            width:25%;
+            display:flex;
+            flex-direction:column;
+            flex-wrap:nowrap;
+        }
+        #banner .bn1{flex:1 1 0; background-color:blueviolet;}
+        #banner .bn2{flex:1 1 0; background-color:plum;}
+        #social{
+            width:25%;
+            background-color:tan;
+        }
+        #footer{
+            width:100%; height:90px;
+            background-color:lemonchiffon;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">header</header>
+        <section id="slider">slider</section>
+        <section id="gallery">gallery</section>
+        <section id="rankup">인기검색어</section>
+        <section id="latest">최신글</section>
+        <section id="popular">인기글</section>
+        <section id="banner">
+            <div class="bn1">배너1</div>
+            <div class="bn2">배너2</div>
+        </section>
+        <section id="social">소셜 네트워크</section>
+        <footer id="footer">footer</footer>
+    </div>
+</body>
+</html>

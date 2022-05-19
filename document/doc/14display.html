@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background-color:deepskyblue;
+            display:inline-block;
+        }
+        span{
+            width:100px;
+            height:100px;
+            background-color:slateblue;
+            display:block;
+        }
+        p{
+            width:100px; 
+            height:50px;
+            background-color:coral;
+        }
+        p strong{
+            display: none;
+        }
+        
+        p:hover strong{
+            display: block;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .btn{
+            display: block;
+            width: 119px;
+            height: 61px;
+            background:#6ec172;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            line-height: 61px;  /*행간조절하는 값 */
+            font-weight: bold;
+        }
+
+        ul li{
+            list-style: none;
+            display: inline-block;
+            width: 20%; 
+            height: 50px;
+            background: palevioletred;
+            text-align: center;
+            line-height: 50px;
+        }
+    /* 
+        블록요소 : 가로세로값을 인식O, 세로배열
+        인라인요소 : 가로세로값을 인식X, 가로배열
+        인라인-블록요소 : 가로세로값을 인식O, 가로배열
+     */
+    </style>
+</head>
+<body>
+
+    <div>div태그</div>
+    <div>div태그</div>
+    <div>div태그</div>
+    <span>span태그</span>
+    <span>span태그</span>
+    <span>span태그</span>
+
+    <!-- 
+    가로 100px, 세로 50px,
+    배경색 coral
+    스트롱태그가 안보이다가 마우스를 올리면 보이게
+     -->
+     <p>
+         <strong>display속성</strong>
+     </p>
+
+     <a href="#" class="btn">웹툰</a>
+
+     <ul>
+         <li>menu01</li>
+         <li>menu02</li>
+         <li>menu03</li>
+         <li>menu04</li>
+     </ul>
+    
+</body>
+</html>

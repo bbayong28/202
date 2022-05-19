@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <style>
+        *{margin:0; padding:0;}
+        /* 
+        calc()함수
+        - css속성의 값으로 계산식 지정
+        - ()소괄호 안에 계산식 작성하고 그 결과가 최종값이 된다
+        - 고차원 수준의 연산은 아니더라도 간단한 사칙연산을 할 수 있다
+        - 연산자(+,-,*,/)를 사용하고 표준연산자 우선순위를 따른다
+        - 반드시 연산자 사이에는 좌우에 공백을 입력한다
+         */
+        body>div{margin-bottom:30px;}
+        .box_cont1 .box1{
+            width:calc(100% - 80px);
+            height:100px;
+            background-color:lightpink;
+            margin:0 auto;
+        }
+
+        .box_cont2{overflow:hidden;}
+        .box_cont2>div{
+            float:left;
+            height:100px;
+            /* width:calc(33.33% - 30px); */
+            width:calc((100% - 90px) / 3);
+            margin:0 15px;
+        }
+        .box_cont2 .box1{background-color:gold;}
+        .box_cont2 .box2{background-color:tomato;}
+        .box_cont2 .box3{background-color:slateblue;}
+    </style>
+</head>
+<body>
+    <div class="box_cont1">
+        <div class="box1"></div>
+    </div><!-- box_cont1 -->
+
+    <div class="box_cont2">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div><!-- box_cont2 -->
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력양식태그 form</title>
+</head>
+<body>
+    <form>
+        <label for="user_id">ID</label>
+        <input type="text" placeholder="아이디를 입력하세요." maxlength="6" id="user_id" required>
+        <label for="user_pw">PW</label>
+        <input type="password" placeholder="비밀번호를 입력하세요." id="user_pw">
+        <label for="birth">생년월일</label>
+        <input type="text" placeholder="년(4자)" maxlength="4" size="4">
+        <select id="birth">
+            <option>월</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select>
+        <input type="text" placeholder="일" id="birth" maxlength="2" size="4">
+
+        <label><input type="checkbox" name="hobby" id="hob1" checked>독서</label>
+        <label><input type="checkbox" name="hobby" id="hob2">음악감상</label>
+        <label><input type="checkbox" name="hobby" id="hob3">영화보기</label>
+
+        <label><input type="radio" name="gender" id="gender1" checked>남성</label>
+        <label><input type="radio" name="gender" id="gender2">여성</label>
+        <label><input type="radio" name="gender" id="gender3">선택안함</label>
+
+        <input type="file">
+
+        <textarea cols="50" rows="5"></textarea>
+
+        <input type="submit" value="회원가입">
+        <input type="reset" value="취소">
+        <input type="button" value="인증번호 전송">
+
+        <fieldset>
+            <legend>로그인</legend>
+            <table>
+                <tr>
+                    <th><label for="id">ID</label></th>
+                    <td><input id="id" type="text"></td>
+                </tr>
+                <tr>
+                    <th><label for="pw">PW</label></th>
+                    <td><input type="password" id="pw"></td>
+                </tr>
+            </table>
+            <input type="submit" value="로그인">
+        </fieldset>
+    </form>
+
+    <!-- 
+    입력양식 form 태그
+    로그인, 회원가입 등 사용자가 웹사이트로 정보를 보낼 수 있는 요소
+    input 태그에 type 속성과 속성값으로 사용
+    책에 있는 type 속성값 한번씩 꼭 읽어보기
+
+    placeholder : 입력된 값이 아닌 설명하는 글
+    value : 실제로 입력된 값
+
+    checkbox, radio 속성을 사용할 때는
+    name속성으로 묶고 id속성으로 구분 / 텍스트를 클릭해도 선택하게 만들려면 label태그로 감싸준다
+
+    name속성은 form이 제출된 후 서버에서 폼 데이터를 참조하거나 자바스크립트에서 요소를 참조할때 사용한다
+
+    textarea 태그에서
+    cols = 가로글자수(너비)
+    rows = 세로 줄 수(높이)
+
+    폼 요소를 그룹으로 묶는 fieldset, legend 
+    -->
+
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .b1{
+            background: lemonchiffon; 
+            border-width: 10px;
+            border-style: solid;
+            border-color: coral;
+        }
+        .b2{ 
+            border: 10px solid coral;
+            margin: 10px 0;
+        }
+        .b3{
+            border:10px solid hotpink;
+            border-radius: 30px 0 50px 100px; /* 왼쪽 위 꼭지점부터 시계방향으로 네개 쓰면 각각 적용할 수 있음 */
+            background-color: darkviolet;
+        }
+        .b4{
+            background-color: red;
+            margin: 10px 0;
+            border-radius: 50%;/* 동그라미값 기억!!!!!! */
+        }
+        .b5{
+            background-color: gold;
+            border-top: 10px solid red;
+            border-left: 30px dotted blue;
+            border-bottom: 15px solid green;
+            border-right: 10px dashed  purple;
+        }
+        .b6{
+            background-color: skyblue;
+            border: 15px;
+            border-style: groove dashed double solid;
+            border-color: red yellow  green blue;
+            margin:10px 0 ;
+        }
+        .b7{
+            background: palevioletred;
+            border: 15px groove #d63384;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+    <div class="b4"></div>
+    <div class="b5"></div>
+    <div class="b6"></div>
+    <div class="b7"></div>
+</body>
+</html>

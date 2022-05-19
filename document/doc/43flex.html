@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .content{
+            width:90%;
+            height:500px;
+            border:2px solid #000;
+            margin:0 auto;
+            text-align:center;
+            display:flex;
+            /* flex-direction:row;
+            flex-wrap:nowrap; */
+            flex-flow:row nowrap;
+            /* 배치방향과 여러줄 배치를 한줄에 설정 */
+
+            /* 
+            flex-direction
+            플렉스 아이템의 배치방향 설정(주축)
+            row - 기본값, 주축:가로축/교차축:세로축 (리버스-역방향배치)
+            column - 주축:세로축/교차축:가로축 (리버스-역방향배치)
+
+            flex-wrap
+            플렉스 아이템을 여러줄에 배치하는 속성
+            nowrap - 기본값, 한줄로 배치
+            wrap - 여러줄로 배치(리버스-역방향배치)
+             */
+        }
+        .content>div{width:100%;}
+        .item1{background-color:palevioletred;}
+        .item2{background-color:palegoldenrod;}
+        .item3{background-color:paleturquoise;}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="item1">플렉스아이템1</div>
+        <div class="item2">플렉스아이템2</div>
+        <div class="item3">플렉스아이템3</div>
+    </div>
+</body>
+</html>

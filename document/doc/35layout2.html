@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout2</title>
+    <style>
+        *{margin:0; padding:0;}
+        .clear::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        #wrap{
+            width:100%; text-align:center;
+        }
+        #contTit{
+            width:100%; height:80px;
+            background-color:#bbb;
+        }
+        #contTit .contTitin{
+            width:960px; height:80px;
+            background-color:powderblue;
+            margin:0 auto;
+        }
+        #container{
+            width:100%; height:800px;
+            background-color:#ddd;
+        }
+        #container .cont1{
+            width:960px;
+            margin:0 auto;
+        }
+        #container .cont1 div{
+            width:240px; height:240px;
+            float:left;
+        }
+        #container .cont1 .c1{background-color:plum;}
+        #container .cont1 .c2{background-color:seashell;}
+        #container .cont1 .c3{background-color:skyblue;}
+        #container .cont1 .c4{background-color:springgreen;}
+        .cont2{
+            width:960px;
+            margin:0 auto;
+        }
+        .cont2 div{
+            width:240px; height:240px;
+            float:left;
+        }
+        .cont2 .c5{
+            background-color:steelblue;
+            width:480px; height:480px;
+        }
+        .cont2 .c6{background-color:tan;}
+        .cont2 .c7{background-color:thistle;}
+        .cont2 .c8{background-color:turquoise;}
+        .cont2 .c9{background-color:wheat;}
+        .cont3{
+            width:960px;
+            margin:0 auto;
+        }
+        .cont3 div{
+            width:240px; height:80px;
+            float:left;
+        }
+        .cont3 .c10{background-color:palegoldenrod;}
+        .cont3 .c11{background-color:palegreen;}
+        .cont3 .c12{background-color:paleturquoise}
+        .cont3 .c13{background-color:papayawhip;}
+    </style>
+</head>
+<body>
+    <!-- 콘텐츠가 들어올 영역 : width:960px
+    header,banner,contentsTitle,footer - height:80px;
+    cont1 div - width:240px height:240px;
+    cont2 div - 계산해보기
+    cont3 div - width:240px height:80px; -->
+
+    <div id="wrap">
+        <div id="contTit">
+            <div class="contTitin">Contents Title</div><!-- contTitin -->
+        </div><!-- contTit -->
+        <section id="container">
+            <div class="cont1 clear">
+                <div class="c1">cont1</div>
+                <div class="c2">cont2</div>
+                <div class="c3">cont3</div>
+                <div class="c4">cont4</div>
+            </div><!-- cont1 -->
+            <div class="cont2 clear">
+                <div class="c5">cont5</div>
+                <div class="c6">cont6</div>
+                <div class="c7">cont7</div>
+                <div class="c8">cont8</div>
+                <div class="c9">cont9</div>
+            </div><!-- cont2 -->
+            <div class="cont3 clear">
+                <div class="c10">cont10</div>
+                <div class="c11">cont11</div>
+                <div class="c12">cont12</div>
+                <div class="c13">cont13</div>
+            </div><!-- cont3 -->
+        </section><!-- container -->
+    </div><!-- wrap -->
+</body>
+</html>

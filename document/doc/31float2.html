@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float2</title>
+    <style>
+        *{margin:0; padding:0;}
+        .clear::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .left{
+            background-color:powderblue;
+        }
+        .left p{
+            width:100px; height:100px;
+            background-color:plum;
+            float:left;
+            margin-right:10px;
+        }
+        .right{
+            background-color:teal;
+        }
+        .right p{
+            width:100px; height:100px;
+            background-color:floralwhite;
+            float:right;
+            margin-left:10px;
+        }
+        .d1{
+            background-color:black;
+            padding:10px 0;
+            width:340px;
+        }
+        .d1 p{
+            width:100px; height:100px;
+            background-color:papayawhip;
+            float:left;
+            margin-right:20px;
+        }
+        .d1 p:last-child{margin-right:0;}
+        .d2{
+            background-color:black;
+            padding:15px 0;
+            width:790px;
+        }
+        .d2 p{
+            width:100px; height:100px;
+            background-color:lightcoral;
+            float:left;
+            margin-right:15px;
+            text-align:center;
+            line-height:100px;
+        }
+        .d2 p:last-child{
+            margin-right:0;
+        }
+        .d3{
+            background-color:black;
+            padding:10px 0;
+            width:430px;
+        }
+        .d3 p{
+            width:100px; height:100px;
+            background-color:lightgreen;
+            float:left;
+            margin-right:10px;
+        }
+        .d3 p:last-child{
+            margin-right:0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="left clear">
+        <p>left01</p>
+        <p>left02</p>
+        <p>left03</p>
+    </div>
+    <div class="right clear">
+        <p>right01</p>
+        <p>right02</p>
+        <p>right03</p>
+    </div>
+    <div class="d1 clear">
+        <p>d1_1</p>
+        <p>d1_2</p>
+        <p>d1_3</p>
+    </div>
+    <div class="d2 clear">
+        <p>d2_1</p>
+        <p>d2_2</p>
+        <p>d2_3</p>
+        <p>d2_4</p>
+        <p>d2_5</p>
+        <p>d2_6</p>
+        <p>d2_7</p>
+    </div>
+    <div class="d3 clear">
+        <p>d3_1</p>
+        <p>d3_2</p>
+        <p>d3_3</p>
+        <p>d3_4</p>
+    </div>
+</body>
+</html>

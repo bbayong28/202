@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout3</title>
+    <style>
+        *{margin:0; padding:0;}
+        ul{list-style:none;}
+        a{text-decoration:none; color:inherit;}
+        .clear::after{
+            display:block;
+            content:'';
+            clear:both;
+        }
+        /* 초기화 */
+        #wrap{
+            width:980px;
+            margin:0 auto;
+        }
+        #header{
+            width:980px; height:130px;
+            background-color:lemonchiffon;
+            position:relative;
+        }
+        #header .logo{
+            text-align:center;
+            padding-top:24px;
+        }
+        /* 부모태그의 첫요소(태그)
+        header, footer / margin 적용 : 부모태그 바깥에 여백을 줌
+        이런 경우에는 padding 값 적용!! */
+        #header .gnb{
+            position:absolute;
+            bottom:24px;
+            left:50%;
+            transform:translateX(-50%);
+        }
+        #header .gnb li{
+            float:left;
+            margin-right:30px;
+        }
+        
+        #header .gnb li:hover{
+            font-weight: bolder;
+            color: orange;
+        }
+        #header .gnb li:last-child{
+            margin-right:0;
+        }
+
+        #header .lnb{
+            position: absolute;
+            top:10px;
+            left:15px;
+        }
+        #header .lnb li{
+            float: left;
+            margin-right: 15px;
+        }
+        #header .gnb li:last-child{
+            margin-right: 0;
+        }
+
+        #header .util{
+            position: absolute;
+            top:10px;
+            right:15px;
+        }
+        #header .util li{
+            float: left;
+            margin-left: 15px;
+        }
+        /* -------------------------- header ----------------------------- */
+
+        #slider{
+            width:980px;
+            height:350px;
+            background: url(img/flower.jfif) no-repeat center center / cover;
+        }
+        /* -------------------------- slider ----------------------------- */
+
+        #container{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #container .cont1{
+            background:pink;
+        }
+        #container .cont1 div{
+            width: 230px; height: 200px;
+            background: lightcoral;
+            float: left;
+            margin-right: 20px;
+        }
+        #container .cont1 div:nth-child(4){
+            margin-right: 0;
+        }
+        #container .cont2{
+            background:lightskyblue ;
+        }
+        #container .cont2 div{
+            width: 480px; height: 200px;
+            background: cornflowerblue;
+            float: left;
+            margin-right: 20px;
+        }
+        #container .cont2 div:nth-child(2){
+            margin-right: 0;
+        }
+
+
+        #footer{
+            height:130px;
+            background-color:lightslategray;
+        }
+        #footer .fmenu{
+            font-size: small;
+            color:white;
+            margin-left: 18px;
+            margin-bottom: 40px;
+            transform: translateY(40%); 
+        }
+        #footer .fmenu li{
+            float:left;
+            border-right:1px solid #fff;
+            margin-right:10px;
+            padding-right:10px;
+        }
+
+        #footer .finfo{
+            text-align: center;
+            font-size: 13px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo">LOGO</h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">메뉴1</a></li>
+                    <li><a href="#">메뉴2</a></li>
+                    <li><a href="#">메뉴3</a></li>
+                    <li><a href="#">메뉴4</a></li>
+                    <li><a href="#">메뉴5</a></li>
+                </ul><!-- gnb -->                
+                <ul class="lnb">
+                    <li><a href="#">가맹문의</a></li>
+                    <li><a href="#">페이스북</a></li>
+                </ul><!-- lnb -->
+                <ul class="util">
+                    <li><a href="#">login</a></li>
+                    <li><a href="#">join</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul><!-- util -->
+            </nav>
+        </header><!-- header -->
+        <section id="slider"></section><!-- slider -->
+        <section id="container">
+            <div class="cont1 clear">
+                <div>배너1</div>
+                <div>배너2</div>
+                <div>배너3</div>
+                <div>배너4</div>
+            </div><!-- cont1 -->
+            <div class="cont2 clear">
+                <div>배너5</div>
+                <div>배너6</div>
+            </div><!-- cont2 -->
+        </section><!-- container -->
+        <footer id="footer">
+            <ul class="fmenu clear">
+                <li><a href="#">유통관리시스템</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">서비스이용약관</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul><!-- fmenu -->
+            <p class="finfo clear">
+                법인명 : 법인명이 들어가는 자리입니다.<br>
+                주소 : 주소가 들어가는 자리입니다.<br>
+                copyright 2020 allrightreserved.
+            </p>
+        </footer><!-- footer -->
+    </div><!-- wrap -->
+</body>
+</html>

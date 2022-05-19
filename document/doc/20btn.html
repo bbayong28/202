@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button 만들기</title>
+    <style>
+        .btn{
+            width: 150px; height: 50px;
+            background:deepskyblue;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+        }
+
+        .btn a{
+            font-size: 20px;
+            text-decoration: none;   
+            color: inherit;
+            /* inherit - 부모의 속성값을 상속받음 */
+            display: block;
+            width: 100%; height: 100%;
+
+        }
+        .btn:hover{
+            border: 1px solid deepskyblue;
+            background-color: #fff;
+            color:deepskyblue;
+        }
+
+            /*  .btn{
+            width: 150px;
+            height: 50px;
+            background-color: skyblue;
+            text-align: center;
+            line-height: 50px;
+            color:white;}
+
+        .btn:hover{border:1px outset skyblue;}
+        .btn a{
+            display: block;
+            width:100%; height: 100%;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            letter-spacing: 2px; 
+        }*
+        .btn:hover a{
+            background-color: #fff;
+            color:skyblue;
+        } */
+    </style>
+</head>
+<body>
+    <!--  
+    가로150px 세로50px
+    폰트크기 20px
+    배경색 파란색
+    글자 흰색
+
+    hover했을 때
+    배경 흰색
+    글자 파란색
+    보더 1px 파란색 실선
+    -->
+    <div class="btn">
+        <a href="#">BUTTON</a>
+    </div>
+    
+</body>
+</html>

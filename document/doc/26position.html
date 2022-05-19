@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body>div{
+            border: 3px solid #333;
+            height: 100px;
+            position: relative;
+            overflow: scroll;
+        }
+        .box{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+        .red {
+            background: red;
+            top:10px; left: 10px;
+            z-index: 1;
+        }
+        .green{
+            background: green;
+            top: 50px; left: 50px;
+            z-index: 150;
+        }
+        .blue{
+            background: blue;
+            top: 90px; left: 90px;
+            z-index: 100;
+        }
+
+        /* 
+            position속성
+            태그의 배치를 위해서 사용하는 속성
+            :static 기본값 - relative나 absolute, fixed 원래 상태로 되돌림
+            :relative
+            absolute의 기준이 될 부모태그에게 반드시 입력돼야하는 속성값
+            :absolute
+            태그들간의 정렬관계에서 분리/독립시킴 태그의 위치를 지정하기 위해서 top, left, bottom, right값을 사용 (부모태그를 기준으로 떨어져있는 거리)
+
+            z-index속성
+            기본적으로 뒤에 입력한 태그가 상위에 표시되는데 이 순서를 변경하고싶을 때 사용
+            단위X, 상대적인 값 입력, !!position 속성이 있는곳에서만 사용가능!!
+            숫자가 클수록 상위에 표시
+            ex) 100>50>1
+
+            overflow속성
+            내부요소가 부모태그의 범위를 벗어날 때 어떻게 처리할지 지정하는 속성
+            :hidden
+            영역을 벗어나는 부분을 숨김
+            :scroll
+            영역을 벗어나는 부분을 스크롤해서 보이게함
+
+        */
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+    
+</body>
+</html>

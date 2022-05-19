@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .section{
+            border:5px solid #000;
+            width: 800px;
+            /* overflow:hidden; */
+        }
+        .section .article{
+            width: 400px; height: 200px;
+            background: orange;
+            float: right;
+        }
+        .clear::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="section clear">
+        <p class="article">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolor, beatae aperiam corrupti tenetur possimus et culpa aut aliquid, placeat fugiat debitis rerum. Accusamus placeat totam voluptates, fugit odit dolorem!
+        </p>
+        <!-- <div class="clear"></div> -->
+        <!-- 이 줄 이후로는 float 속성을 초기화 -->
+    </div>
+
+    <!-- 
+    float 속성 : 형제 관계인 태그끼리 가로배열하는 속성
+
+    left : 태그를 왼쪽에서부터 차례대로 가로배열
+    right : 태그를 오른쪽에서부터 차례대로 가로배열
+    none : 기본값
+
+    float 속성이 추가된 태그는 자신들끼리 가로배열을 맞추기위해 브라우저로부터 띄워진 상태로 인식하기 때문에 float 속성을 감사고 있는 부모태그는 높이값을 0으로 인식한다.
+
+    부모태그가 잃어버린 높이값을 찾아주는 공식
+    1. 부모태그에게 overflow:hidden; 속성 넣기
+    2. float 속성을 쓴 태그 다음에 비어있는 div 구조를 넣고 clear:both 속성넣기
+    3. 가상공간 생겅  ::after를 사용하여 float 속성을 쓴 부모태그에게 class명 clear추가 후 css에서 
+        .clear::after{
+            display:block;
+            content:'';
+            clear: both;
+        }
+    -->
+</body>
+</html>

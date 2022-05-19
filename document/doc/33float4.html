@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float4</title>
+    <style>
+        *{margin:0; padding:0;}
+        ul{list-style:none;}
+        a{text-decoration:none; color:inherit;}
+        .clear::after{content:''; display:block; clear:both;}
+        #wrap{
+            width: 960px; 
+            margin: 0 auto;
+        }
+        #header{}
+        #header .logo{
+            width: 960px;
+            height: 70px;
+            background:#6f42c1;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+        }
+        .gnb{
+            width: 960px;
+            height: 70px;
+        }
+
+        .gnb li{
+            background:  #fd7e14;
+            width: 192px; height: 70px;
+            float: left;
+            text-align: center;
+            line-height: 70px;
+        }
+        .gnb li a{
+            display: block;
+            color: #000;
+            width: 100%; height: 100%;
+        }
+        .gnb li:hover{
+            background: #ffc107;
+        }
+        .gnb li:hover a{
+            color: white;
+            font-weight: bold;
+        }
+        #container{
+            background:lightyellow;
+            height: 500px;
+            padding: 30px;
+        }
+        #footer{
+            height: 70px;
+            background:  #495057;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            line-height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo">LOGO</h1><!-- logo -->
+            <ul class="gnb clear">
+                <li><a href="#">menu01</a></li>
+                <li><a href="#">menu02</a></li>
+                <li><a href="#">menu03</a></li>
+                <li><a href="#">menu04</a></li>
+                <li><a href="#">menu05</a></li>
+            </ul><!-- gnb -->
+        </header><!-- #header -->
+        <section id="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vitae obcaecati perferendis perspiciatis dicta vel rem aspernatur nemo, dolorum tempora libero aliquam, architecto, expedita vero nulla. Quia numquam perspiciatis asperiores!</p>
+        </section><!-- #container -->
+        <footer id="footer">
+            <p>footer info</p>
+        </footer><!-- #footer-->
+    </div><!-- #wrap -->
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .basic{
+            width:500px;
+            margin:10px auto;
+        }
+        .basic img{width:100%; height:auto;}
+        .moveX:hover{
+            transform:translateX(-100px);
+            /* 음수값 왼쪽으로 이동 양수값 오른쪽으로 이동 */
+        }
+        .moveY:hover{
+            transform:translateY(-100px);
+            /* 음수값 위쪽으로 이동 양수값 아래쪽으로 이동 */
+        }
+        .moveXY:hover{
+            transform:translate(-100px, 100px);
+        }
+        .scale:hover{
+            transform:scale(0.4);
+            /* 값이 1보다 크면 확대, 1보다 작으면 축소 */
+        }
+        .rotate:hover{
+            transform:rotate(45deg);
+            /* 음수 반시계 양수 시계방향 */
+            transform-origin:right bottom;
+            /* 고정점의 위치 */
+        }
+    </style>
+</head>
+<body>
+    <div class="basic">
+        <div class="moveX">
+            <img src="img/flower.jpg">
+        </div>
+    </div>
+    <div class="basic">
+        <div class="moveY">
+            <img src="img/flower.jpg">
+        </div>
+    </div>
+    <div class="basic">
+        <div class="moveXY">
+            <img src="img/flower.jpg">
+        </div>
+    </div>
+    <div class="basic">
+        <div class="scale">
+            <img src="img/flower.jpg">
+        </div>
+    </div>
+    <div class="basic">
+        <div class="rotate">
+            <img src="img/flower.jpg">
+        </div>
+    </div>
+</body>
+</html>

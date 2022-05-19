@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형웹 4</title>
+    <style>
+        #wrap{
+            min-width:320px;
+        }
+        .box1{
+            width:100%; height:300px;
+            background-color:tomato;
+        }
+        .box2{
+            width:100%; height:300px;
+            background-color:green;
+        }
+        .box3{
+            width:100%; height:300px;
+            background-color:purple;
+        }
+        /****************** 모바일 끝 ******************/
+        @media all and (min-width:768px){
+            .box1{
+                height:100px;
+                float:left;
+            }
+            .box2{
+                width:25%; height:600px;
+                float:left;
+            }
+            .box3{
+                width:75%; height:600px;
+                float:left;
+            }
+        }
+        /****************** 768px 끝 ******************/
+        @media all and (min-width:1024px){
+            #wrap{
+                max-width:1024px;
+                margin:0 auto;
+            }
+            .box1{
+                height:600px;
+                width:33.33%;
+            }
+            .box2{width:33.33%}
+            .box3{width:33.33%}
+        }
+        /* 
+        목록 개수가 많을 때 가로너비
+        2개 : 
+        3개 : 
+        4개 : 
+        5개 : 
+        6개 : 
+        */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <!-- 모바일 : box1,2,3 height:300px
+    min-width:768 : 비율 알아서 / height:600px
+    min-width:1024 -->
+
+</body>
+</html>

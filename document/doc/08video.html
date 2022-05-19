@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video, audio</title>
+</head>
+<body>
+    <video src="img/Wildlife.mp4" controls loop poster="img/cha.jpg"></video>
+<!-- 
+    웹표준 : 어떤 운영체제나 어떤 브라우저를 사용하더라도 웹 페이지가 동일하게 보이고 정상적으로 작동해야한다.
+    웹접근성 : 장애여부와 상관없이 누구나 원활하게 웹페이지를 이용할 수 있어야한다.
+ -->
+    <video controls autoplay muted loop>
+        <source src="img/Wildlife.mp4">
+        <source src="img/Wildlife.webm">
+    </video>
+<!-- 
+    비디오태그의 속성
+    src 경로 지정
+    controls 컨트롤러 표시
+    autoplay 자동재생
+    muted 음소거(자동재생시 필수 속성)
+    loop 반복재생
+    poster 대기상태일때 표시할 이미지
+
+    웹브라우저에서 지원하는 동영상 파일 형식
+    mp4 모두지원
+    webm 익스플로러, 사파리 제외 모두지원
+    ogv 익스플로러, 사파리 제외 모두지원
+
+    mp4 라이센스 문제로 재생이 안될수도 있기때문에 두개의 파일을 준비하는것이 좋다
+
+    웹브라우저에서 지원하는 음악 파일 형식
+    mp3 모두지원
+    ogg 익스플로러 제외 모두지원
+    wav 익스플로러, 사파리 제외 모두지원
+
+    mp3 라이센스 문제로 재생이 안될 수도 있기때문에 두개의 파일을 준비
+ -->
+
+    <audio src="img/Kalimba.mp3" controls></audio>
+    <audio controls autoplay loop>
+        <source src="img/Kalimba.mp3">
+        <source src="img/Kalimba.ogg">
+        오디오가 지원되지 않는 브라우저입니다.
+    </audio>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-PQGsN_Xx9o?playlist=-PQGsN_Xx9o&autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- 
+    youtube 영상 하단의 [공유]버튼 -> 퍼가기 <> -> iframe 코드 복사
+    src 주소 뒤에 ?playlist=영상코드&autoplay=1&mute=1&loop=1&controls=0
+
+    논리형데이터(boolean) - 참 1(쓴다), 거짓 0(안쓴다)
+    태그로 쓸 때 논리형데이터는 명시하지않으면 자동으로 false값, 명시하면 true값
+ -->
+</body>
+</html>

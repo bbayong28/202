@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        div{
+            width:200px;
+            height:100px;
+            background-color:#fd7e14;
+            border:20px solid #333;
+            margin:10px 0;
+            padding:20px;
+        }
+        .cbox{box-sizing:content-box;}
+        .bbox{box-sizing:border-box;}
+    </style>
+</head>
+<body>
+    <div class="cbox">Content Box</div>
+    <div class="bbox">Border Box</div>
+
+    <!-- 
+    box-sizing 속성
+    css 박스 모델의 기본값에서 지정한 너비와 높이값, 여백, 테두리를 모두 더한값에서 방식을 바꿀 수 있다.
+    태그 크기 계산 기준을 지정
+
+    border-box
+    : width, height 속성이 안쪽 여백과 테두리 포함
+    content-box
+    : width, height 속성이 콘텐츠 영역만 포함하고 안쪽 여백과 테두리는 포함하지 않음
+
+    margin은 바깥여백이기때문에 크기에 포함시키지 않음
+     -->
+</body>
+</html>

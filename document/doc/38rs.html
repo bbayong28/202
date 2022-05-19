@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        브레이크포인트 768, 1024
+        모바일 - 320~767 - 배경색 노랑 / h1 컬러 빨강 / 글자 중앙정렬 / 여백값 조절
+        태블릿 - 768~1023 - 배경색, 컬러 변경
+        PC - 1024~ - 글자 왼쪽정렬, 배경색 변경, p태그 여백값 조절... 
+        */
+
+        body{background-color:yellow;}
+        h1{text-align:center; color:red; padding:25px;}
+
+        @media all and (min-width:768px){
+            body{background-color:plum;}
+            h1{color:#fff;}
+            p{color:#fff;}
+        }
+        @media all and (min-width:1024px){
+            body{background-color:lightcoral;}
+            h1{text-align:left; color:#000;}
+            p{margin:10px 15px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>반응형 웹 사이트</h1>
+    <p>하나의 html문서와 하나의 css문서를 사용하여 모바일, 태블릿, pc에 최적화된 화면을 구성하는 방식</p>
+    <p>css 문서를 작성할 때 미디어쿼리의 조건을 사용해서 현재 문서가 출력될 환경을 지정할 수 있다.</p>
+    <p>화면 사이즈 전환이 이루어지는 시점을 '브레이크포인트'라고 부르며 브레이크 포인트의 개수는 사이트별로 달라질 수 있다.</p>
+    <p>기본적으로 아이패드 사이즈 768px을 기준으로 태블릿 사이트를 맞추고 1024px 또는 콘텐츠를 담고있는 안전사이즈를 기준으로 브레이크 포인트를 지정할 수 있다.</p>
+</body>
+</html>

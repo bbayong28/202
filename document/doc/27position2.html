@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position2</title>
+    <style>
+        *{margin:0; padding:0;}
+        .wrap{
+            width: 400px;
+            height: 340px;
+            background: skyblue;
+            position: relative;
+        }
+        .wrap>div{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            position: absolute;
+        }
+
+        .wrap .d1{
+            top:0; left: 0;
+        }
+        .wrap .d2{
+            top:100px; left: 0;
+        }
+        .wrap .d2 .s1{
+            width: 40px; height: 40px;
+            background: #000;
+            position: absolute;
+            right:0; bottom:0;
+            
+        }
+        .wrap .d3{
+            top: 100px; left: 100px;
+            background: hotpink;
+        }
+        .wrap .d4{
+            top: 140px; left: 200px;
+        }
+        .wrap .d5{
+            top: 240px; left: 0; /* bottom:0; left:0; */
+        }
+        .wrap .d6{
+            top: 200px; left:300px; /*  right:0; bottom:40px; */
+        }
+        .wrap .d6 .s2{
+            width: 40px; height: 40px;
+            background: #000;
+            position: absolute;
+            right:0; bottom:60px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+    파란박스 : width:400; height:340;
+    분홍박스 : width:100; height:100;
+    검정박스 : width:40; height:40;
+    -->
+    <div class="wrap">
+        <div class="d1">1</div>
+        
+        <div class="d2">2
+                <div class="s1"></div>
+        </div>
+
+        <div class="d3">3</div>
+        
+        <div class="d4">4</div>
+        
+        <div class="d5">5</div>
+        
+        <div class="d6">6
+            <div class="s2"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

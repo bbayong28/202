@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .d1{
+            width:250px; height:250px;
+            background-color:hotpink;
+            margin:150px auto;
+            /* transition:all 0.5s ease-in 0.7s; */
+            transition-property:all; /* 전환할 대상 */
+            transition-duration:0.7s; /* 지속시간 */
+            transition-timing-function:ease-in; /* 중간속도 */
+            transition-delay:0.7s; /* 지연시간 */
+        }
+        .d1:hover{
+            transform:scale(1.5) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="d1"></div>
+</body>
+</html>

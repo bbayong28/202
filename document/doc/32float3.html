@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float3</title>
+    <style>
+        .clear::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        #wrap{
+            width:900px; height:600px;
+            background-color:gray;
+            margin:0 auto;
+        }
+        #wrap .d1{
+            width:290px; height:600px;
+            background-color:lightgoldenrodyellow;
+            float:left;
+        }
+        #wrap .d2{
+            width:600px;
+            height:295px;
+            background-color:lightpink;
+            float:right;
+        }
+        #wrap .d3{
+            width:295px; height:295px;
+            background-color:lightsalmon;
+            float:left;
+            margin:10px 10px 0 10px;
+        }
+        #wrap .d4{
+            width:295px; height:295px;
+            background-color:lightseagreen;
+            float:left;
+            margin-top:10px;
+        }
+        </style>
+</head>
+<body>
+    <div id="wrap" class="clear">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+    </div>
+</body>
+</html>

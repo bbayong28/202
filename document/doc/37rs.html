@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web</title>
+    <style>
+
+        #cont1{background-color:#f66;}
+        #cont2{background-color:#fc3;}
+        #cont3{background-color:#ff0;}
+        #cont4{background-color:#3f0;}
+        .pd{padding:1em;}
+
+        /* 모바일 화면 기준 320px - 639px */
+
+        @media all and (min-width:640px){
+        /* 최소너비 640px일 때 부터 사용할 css를 작성하는 공간 */
+            body{background-color:#000;}
+            .pd{padding:2em;}
+        }
+        
+        /* 640px - 767px */
+        
+        @media all and (min-width:768px){
+            body{background-color:#c0f;}
+            .pd{padding:3em;}
+        }
+
+        /* 768px - 1023px */
+
+        /* 최소너비 1024px 부터 body 배경색 #3cf; .pd 패딩값 6em */
+        @media all and (min-width:1024px){
+            body{background-color:#3cf;}
+            .pd{padding:6em;}
+        }
+
+        /* 
+        @media all and ~ - 모든 디바이스
+        @media screen and ~ - 화면을 대상으로
+        @media print and ~ - 인쇄 미리보기 
+        */
+         
+    </style>
+</head>
+<body>
+    <div id="cont1" class="pd"></div>
+    <div id="cont2" class="pd"></div>
+    <div id="cont3" class="pd"></div>
+    <div id="cont4" class="pd"></div>
+</body>
+</html>

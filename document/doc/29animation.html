@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .blackball{
+            width: 100px; height: 100px;
+            background: black;
+            border-radius: 50%;
+
+            animation-name:blackball;
+            /* 애니메이션 이름 지정 */
+            animation-duration:1s;
+            /* 한 사이클이 몇초에 걸쳐서 일어날 것인지 */
+            animation-timing-function: ease-in-out;
+            /* 
+            중간상태 속도조절
+            linear : 일정한 속도
+            ease : 기본값, 천천히 시작 - 빨라짐 - 다시 느려짐
+            ease-in : 천천히 시작
+            ease-out : 천천히 끝남
+            ease-in-out : 천천히 시작 - 천천히 끝남
+            cubic-bezier : 중간상태 속도조절 제어(심화과정)
+            */
+            animation-iteration-count: infinite;
+            /* 몇 번 반복될것인지 */
+            animation-direction: alternate;
+            /* 애니메이션 종료 후 처음부터 진행할지, 역방향으로 진행할지 */
+            animation-delay: 0;
+            /* 딜레이(지연시간) */
+
+            /* animation:blackball 1s ease-in infinite alternate; */
+            position: absolute; left: 10px;
+        }
+        @keyframes blackball{
+            0%{top:0;}
+            100%{top:300px;}
+        }
+
+        div{
+            width:100px; height:100px;
+            background-color:yellow;
+            border-radius:50%;
+            position: absolute;
+            animation: ball 2s ease-in-out  infinite alternate;
+            /* animation-name:ball;
+            animation-duration:2s;
+            animation-timing-function:ease-in-out
+            animation-iteration-count:infinite;
+            animation-direction:alternate; */
+            animation-delay: 0;
+        }
+        @keyframes ball{
+            0%{top:0; left:0;}
+            50%{top:300px; left:300px;}
+            100%{top:0; left:600px;}
+        }
+        p{
+            width: 100px; height: 100px;
+            background:cornflowerblue;
+            margin: 100px 0 0 150px;
+            animation: square 3s ease-in infinite normal;
+        }
+        @keyframes square{
+            0%{transform:rotate(0deg);}
+            100%{transform:rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="blackball"></div>
+    <div></div>
+    <p></p>
+</body>
+</html>
